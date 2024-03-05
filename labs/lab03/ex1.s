@@ -21,3 +21,8 @@ finish:
     ecall # print integer ecall
     addi a0, x0, 10
     ecall # terminate ecall
+
+# 1. .data store following into data section, .text store into text section
+#   .word put word data to output file
+# 2. prints 34, ninth fib number
+# 3. n is stored at 0x10000008

@@ -37,10 +37,10 @@ main:
     sw s3, 12(sp)
     sw ra, 16(sp)
     # END PROLOGUE
-    addi t0, x0, 0
-    addi s0, x0, 0
-    la s1, source
-    la s2, dest
+    addi t0, x0, 0 # t0 = var t
+    addi s0, x0, 0 # s0 = var sum
+    la s1, source # s1 = addr of source
+    la s2, dest # s2 = addr of dest
 loop:
     slli s3, t0, 2
     add t1, s1, s3
